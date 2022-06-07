@@ -1,3 +1,4 @@
+```console
 Random starting synaptic weight: 
 [[-0.16595599]
  [ 0.44064899]
@@ -8,3 +9,4 @@ New synaptic_weights:
  [-4.21660078]]
 Under New situation [1, 0, 1]: 
 [0.00021745]
+```
