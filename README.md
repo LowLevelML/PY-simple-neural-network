@@ -30,7 +30,7 @@ the output I want is a 1 x 4 matrix (or 4 x 1 I dont really like matrixes)
 ```
 now if you did not already notice the pattern I was going for, I was going for the second row as my output (but the computer does not know that yet).
 
-## Training
+Training
 
 I think this explanation below from source [1] sums it up perfectly
 
@@ -44,6 +44,36 @@ But how do we teach our neuron to answer the question correctly? We will give ea
 
 ```
 
+neurons ouput:
+
+```console
+neurons_output = sigma weight_i * input_i = weight_1 * input_1 ...(till i)
+```
+
+Since the result is between 0 and 1 we shall use the sigmoid function (to make life easier)
+
+```console
+1/(1 + e^(-x))
+
+```
+
+and so we can do this
+
+```console
+output = 1/(1 + e^(sigma weight_i * input_i))
+```
+
+How to adjust the weights by
+
+adjust weights = error * input * sigmoidcurve(output)
+
+sigmoidcurvegradient(output) = output(1 - output) // 1-ouput is the deravtive of the sigmoid function
+
+```console
+adjust weights = error * input * (output) * (1 - output)
+```
+
+for the code look into the [src](./src/) directory.
 
 # Sources
 
