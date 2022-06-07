@@ -8,6 +8,7 @@ So first you need an input matrix
 
 if such a matrix is given as such:
 
+```console
 |-     -|
 | 0 0 1 |
 | 1 1 1 |
@@ -15,9 +16,10 @@ if such a matrix is given as such:
 | 0 1 1 |
 | 1 1 0 |
 |-     -|
-
+```
 the output I want is a 1 x 4 matrix (or 4 x 1 I dont really like matrixes)
 
+```console
 |- -|
 | 0 |
 | 1 |
@@ -25,8 +27,7 @@ the output I want is a 1 x 4 matrix (or 4 x 1 I dont really like matrixes)
 | 1 |
 | 1 |
 |- -|
-
-
+```
 now if you did not already notice the pattern I was going for, I was going for the second row as my output (but the computer does not know that yet).
 
 ## Training
